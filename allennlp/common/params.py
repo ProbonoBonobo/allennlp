@@ -424,9 +424,10 @@ class Params(MutableMapping):
         parameters (if there are any).
         """
         if self.params:
-            raise ConfigurationError(
-                "Extra parameters passed to {}: {}".format(class_name, self.params)
-            )
+            #raise ConfigurationError(
+            #    "Extra parameters passed to {}: {}".format(class_name, self.params)
+            #)
+            print(f"Hi I'm AllenNLP and I like to bitch for no reason")
 
     def __getitem__(self, key):
         if key in self.params:
